@@ -2,12 +2,12 @@
 A buffer overflow occurs when data exceeds the allocated memory buffer, overwriting adjacent 
 memory locations. 
 ## This can lead to:
-• Memory corruption
-• Unexpected crashes
+• Memory corruption\
+• Unexpected crashes\
 • Remote code execution
 ## Impact of Buffer Overflow Attacks
-• Denial of Service (DoS): Application crashes due to memory corruption.
-• Privilege Escalation: Attackers can execute arbitrary code.
+• Denial of Service (DoS): Application crashes due to memory corruption.\
+• Privilege Escalation: Attackers can execute arbitrary code.\
 • Data Manipulation: Sensitive data can be leaked or altered.
 
 ## How SAST Detects Buffer Overflows:
