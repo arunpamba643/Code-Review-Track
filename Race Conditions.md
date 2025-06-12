@@ -25,18 +25,18 @@ Use lock to ensure only one thread accesses the critical section at a time.
 
 # Vulnerable Code:
 public class BankAccount
-{
- private int balance = 1000;
- public void Withdraw(int amount)
- {
- if (balance >= amount) // Another thread can modify `balance` before this executes!
- {
- balance -= amount; // Race condition occurs here!
- Console.WriteLine($"Withdrawal successful. Remaining balance: {balance}");
- }
- else
- {
- Console.WriteLine("Insufficient funds.");
- }
- }
+{\
+ private int balance = 1000;\
+ public void Withdraw(int amount)\
+ {\
+ if (balance >= amount) // Another thread can modify `balance` before this executes!\
+ {\
+ balance -= amount; // Race condition occurs here!\
+ Console.WriteLine($"Withdrawal successful. Remaining balance: {balance}");\
+ }\
+ else\
+ {\
+ Console.WriteLine("Insufficient funds.");\
+ }\
+ }\
 }
