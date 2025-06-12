@@ -1,4 +1,5 @@
 # Cross-Site Scripting (XSS) – SAST Description
+
 ## Description:
 Cross-Site Scripting (XSS) is a vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. In the context of Static Application Security Testing (SAST), XSS is identified by analyzing source code for unsafe handling of user input that is rendered in HTML or JavaScript without proper sanitization or encoding.
 

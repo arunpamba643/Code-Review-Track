@@ -1,4 +1,4 @@
-# XXE (XML External Entity) 
+# XXE (XML External Entity) — SAST Description
 
 ## Description:
 XML External Entity (XXE) is a vulnerability that occurs when an application processes XML input containing a reference to an external entity. If the XML parser is improperly configured, attackers can exploit this to access internal files, perform SSRF (Server-Side Request Forgery), or cause denial of service.
