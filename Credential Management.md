@@ -10,6 +10,14 @@ Insecure storage (e.g., writing credentials to plaintext files or logs).\
 Use of outdated or weak encryption algorithms.\
 Misuse of authentication libraries or insecure configuration of credential storage.
 
+## Mitigation:
+Never hardcode credentials in source code. Use secure vaults or environment variables.\
+Apply strong encryption (AES-256) when storing credentials.\
+Secure access to secrets using secret management tools (e.g., AWS Secrets Manager, HashiCorp Vault).\
+Ensure logs and error messages do not expose credentials.\
+Rotate credentials periodically and enforce strong password policies.
+
+
 ## Example of Vulnerability:
 
 ### Vulnerable Code
